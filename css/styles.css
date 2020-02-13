@@ -1,11 +1,15 @@
 /* MOBILE AND GLOBAL STYLES */
-
+.menu{
+  background-color: darkgrey;
+  color: white;
+  line-height: 2em;
+}
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
 body {
   background: #fcc;
-} 
+}
 
 
 
@@ -14,10 +18,38 @@ body {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
     background: #cfc;
-  } 
+  }
+
+  nav {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  font-family: sans-serif;
+  /* grouped on left or right (start or end)*/
+  align-items:stretch;
+  /*horizontal or vertical (row or column)*/
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+
+a {
+  color: white;
+  padding: 1em;
+  transition: background-color 0.25s;
+  background-color: #000000;
+  text-decoration: none;
+}
+
+/* colour that shows when you hover over the text */
+a:hover {
+  background-color: #999999;
+}
+
 }
 
 
@@ -30,5 +62,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
